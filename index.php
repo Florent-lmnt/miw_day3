@@ -1,11 +1,13 @@
 <?php
 // Redirect to script to send email
-if (!empty($_POST['email'])) {
+/*
+    if (!empty($_POST['email'])) {
 
     // Sending invitation by email
     header('Location: send_email.php');
     exit;
 }
+*/
 
 $body_class = "";
 
@@ -26,7 +28,7 @@ if (!empty($_GET['delivery']) and $_GET['delivery'] === "sent") {
 
 <body class="<?php echo $body_class ?>">
 
-<form action="#" method="post">
+<form action="send_email.php" method="post">
     <input type="email" name="email" placeholder="Ton email de star..." required/>
     <input type="submit" value="" id="submit"/>
     <label for="submit">
