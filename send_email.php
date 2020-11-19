@@ -38,7 +38,7 @@ try {
     $mail->Body = file_get_contents('email/email_party.html');
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-    //$mail->send();
+    $mail->send();
     header('location: index.php?delivery=sent');
     } catch (Exception $e) {
     echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
