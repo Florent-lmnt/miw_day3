@@ -1,13 +1,5 @@
 <?php
 // Redirect to script to send email
-/*
-    if (!empty($_POST['email'])) {
-
-    // Sending invitation by email
-    header('Location: send_email.php');
-    exit;
-}
-*/
 
 $body_class = "";
 
