@@ -1,6 +1,4 @@
 <?php
-// Redirect to script to send email
-
 $body_class = "";
 
 // Display delivery status, (tips anti-refreshing)
