@@ -1,14 +1,88 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//FR"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns:v="urn:schemas-microsoft-com:vml">
+<html lang="fr">
 <head>
-    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Party Email</title>
-    <meta name="viewport" content="width=device-width; initial-scale=1.0;
-    maximum-scale=1.0">
+    <style>
+        /*class qui cache l'info dans le footer*/
+        .desktop {
+            display: none;
+        }
+
+        .mobile {
+            display: block;
+        }
+
+        /*class qui align le text pour toute les ta les*/
+        table {
+            text-align: center;
+        }
+
+        @media (min-width: 769px) {
+            /*media query pour la version pc + on affiche l'info du footer */
+            .desktop {
+                display: block;
+                text-align: center;
+            }
+
+            .mobile {
+                display: none;
+            }
+
+            /*definis une taille au container du mail*/
+            .container {
+                width: 796px;
+                margin: 0 auto;
+            }
+
+            /*on positionne les infos de l'adresse sur la gauche afin d'aligner les autres*/
+            .pos {
+                width: 32%;
+                float: left;
+            }
+            /*on positionne les infos pour la musique au centre */
+            .music {
+                width: 32%;
+                float: left;
+            }
+            /*on positionne les infos du tarif sur la droite */
+            .money {
+                width: 32%;
+                padding-top: 0;
+                margin-top: 0;
+                float: right;
+            }
+
+            /*on positionne les infos de la miss egde sur la gauche */
+            .edge {
+                width: 50%;
+                float: left;
+            }
+            /*on positionne les infos de la miss firefox sur la droite pour l'aligner a edge*/
+            .firefox {
+                width: 50%;
+                float: right;
+            }
+
+            /*on positionne les infos de la miss opera sur la gauche en dessous de edge et firefox */
+            .opera {
+                width: 50%;
+                float: left;
+            }
+            /*on positionne les infos de la miss safari sur la droite pour l'aligner a opera*/
+            .safari {
+                width: 50%;
+                float: right;
+            }
+
+        }
+
+    </style>
 </head>
 <body class="container" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-
+    <!-- ============= Tableau du header avec le fond ============= -->
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
         <tr>
@@ -48,6 +122,7 @@
         </tbody>
     </table>
 
+    <!-- ============= Tableau du titre principal ============= -->
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody style="text-align: center; color: #354052;">
         <tr>
@@ -69,7 +144,7 @@
         </tbody>
     </table>
 
-
+    <!-- ============= Tableau de la position ============= -->
     <table class="pos" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
         <tr>
@@ -96,7 +171,7 @@
         </tr>
         </tbody>
     </table>
-
+    <!-- ============= Tableau pour la musique ============= -->
     <table class="music" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
         <tr>
@@ -120,7 +195,7 @@
         </tr>
         </tbody>
     </table>
-
+    <!-- ============= Tableau le tarif ============= -->
     <table class="money" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
         <tr>
@@ -142,10 +217,11 @@
         </tbody>
     </table>
 
+    <!-- ============= Tableau pour le deuxieme titre ============= -->
     <table class="subtitle" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
             <tr>
-                <td style="font-family: 'Arial'; font-size: 30px; font-weight: bold;">La meilleur soirée étudiante de noël à Gap, avec en guess star 4 navigatrices !</td>
+                <td style="font-family: 'Arial'; font-size: 30px; font-weight: bold;">La meilleure soirée étudiante de noël à Gap, avec en guess star 4 navigatrices !</td>
             </tr>
             <tr>
                 <td height="40" style="font-size: 40px; line-height: 40px;"> &nbsp;</td>
@@ -153,6 +229,7 @@
         </tbody>
     </table>
 
+    <!-- ============= Tableau de la miss edge ============= -->
     <table class="edge" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
             <tr>
@@ -172,7 +249,7 @@
             </tr>
         </tbody>
     </table>
-
+    <!-- ============= Tableau de la miss firefox ============= -->
     <table class="firefox" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
             <tr>
@@ -193,7 +270,7 @@
             <tr>
         </tbody>
     </table>
-
+    <!-- ============= Tableau de la miss opera ============= -->
     <table class="opera" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
             <tr>
@@ -206,14 +283,14 @@
                 <td style="font-family: 'Arial'; font-size: 20px; font-weight: bold;">Miss Opera</td>
             </tr>
             <tr>
-                <td style="font-family: 'Arial'; font-size: 18px;">La norvégienne discrète et astucieuses</td>
+                <td style="font-family: 'Arial'; font-size: 18px;">La norvégienne discrète et astucieuse</td>
             </tr>
             <tr>
                 <td height="15" style="font-size: 15px; line-height: 15px;"> &nbsp;</td>
             </tr>
         </tbody>
     </table>
-
+    <!-- ============= Tableau de la miss safari ============= -->
     <table class="safari" width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
             <tr>
@@ -234,6 +311,7 @@
         </tbody>
     </table>
 
+    <!-- ============= Tableau du bouton ============= -->
     <table width="100%" border="0" cellpadding="0" cellspacing="0">
         <tbody>
             <tr>
@@ -247,8 +325,8 @@
         </tbody>
     </table>
 
-
-    <table class="footer" width="100%" border="0" cellpadding="0" cellspacing="0" style="background-color: #F5F5F5;">
+    <!-- ============= Tableau du footer ============= -->
+    <table border="0" cellpadding="0" cellspacing="0" style="background-color: #F5F5F5; width: 100%;">
         <tbody style="text-align: center; color: #354052; font-family: Arial">
         <tr>
             <td height="30" style="font-size: 30px; line-height: 30px;"> &nbsp;</td>
@@ -275,10 +353,19 @@
             <td style="font-weight: bold; ">MIW'x.</td>
             <td style="font-weight: lighter; text-align: left">All Rights Reserved.</td>
         </tr>
-        <tr class="desktop" style="font-weight: bold">
-            <td style="width: 33%; text-align: right">miw@miw.com</td>
-            <td style="width: 2%"> | </td>
-            <td style="width: 33%; text-align: left">06 07 08 09 10</td>
+        <tr class="mobile">
+            <td height="30" style="font-size: 30px; line-height: 30px;"> &nbsp;</td>
+        </tr>
+        </tbody>
+    </table>
+
+    <!-- ============= Tableau du site et téléphone ============= -->
+    <table class="desktop" border="0" cellpadding="0" cellspacing="0" style="background-color: #F5F5F5; width: 100%;">
+        <tbody style="text-align: center; color: #354052; font-family: Arial; display: block">
+        <tr style="display: block">
+            <td style="width: 10%"> &nbsp; </td>
+            <td style="width: 10%">miw@miw.com | 06 07 08 09 10</td>
+            <td style="width: 10%"> &nbsp; </td>
         </tr>
         <tr>
             <td height="30" style="font-size: 30px; line-height: 30px;"> &nbsp;</td>
@@ -286,68 +373,5 @@
         </tbody>
     </table>
 
-<style>
-    .desktop {
-        display: none;
-    }
-
-    table {
-        text-align: center;
-    }
-
-    @media (min-width: 769px) {
-        .desktop {
-            display: table;
-            text-align: center;
-        }
-
-        .container {
-            width: 796px;
-            margin: 0 auto;
-        }
-
-        .pos {
-            width: 32%;
-            float: left;
-        }
-
-        .music {
-            width: 32%;
-            float: left;
-        }
-
-        .money {
-            width: 32%;
-            padding-top: 0;
-            margin-top: 0;
-            float: right;
-        }
-
-        .edge {
-            width: 50%;
-            float: left;
-        }
-
-        .firefox {
-            width: 50%;
-            float: right;
-        }
-
-        .opera {
-            width: 50%;
-            float: left;
-        }
-
-        .safari {
-            width: 50%;
-            float: right;
-        }
-
-        .footer {
-
-        }
-    }
-
-</style>
 </body>
 </html>
